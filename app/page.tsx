@@ -5,6 +5,7 @@ import Title from '@/components/atoms/Title'
 import Feature from '@/components/molecules/Feature'
 import FeaturesGroup from './components/organisms/FeaturesGroup'
 import Price from './components/organisms/Price'
+import Contact from './components/organisms/Contact'
 
 export default function Home() {
   return <div className="">
@@ -36,7 +37,9 @@ export default function Home() {
           message='Perfect for individuals getting started with our platform.'
         />
       </div>
-
+      <div className='mt-20'>
+        <Contact />
+      </div>
     </div>
   </div>;
 }
