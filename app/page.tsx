@@ -4,6 +4,7 @@ import Layout from '@/components/molecules/Layout'
 import Title from '@/components/atoms/Title'
 import Feature from '@/components/molecules/Feature'
 import FeaturesGroup from './components/organisms/FeaturesGroup'
+import Price from './components/organisms/Price'
 
 export default function Home() {
   return <div className="">
@@ -28,6 +29,14 @@ export default function Home() {
           ></FeaturesGroup>
         </div>
       </Layout>
+      <div className='mt-20 mb-20 flex flex justify-center items-center'>
+        <Price
+          planTitle='Basic'
+          price='$9.99'
+          message='Perfect for individuals getting started with our platform.'
+        />
+      </div>
+
     </div>
   </div>;
 }
