@@ -30,17 +30,16 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      -name: Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v3
-
-      -name: Set up Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '22'
-      -name: Intal Vercel CLI
+      - name: Install Vercel CLI
         run: npm install -g vercel
-      -name: Pull Vercel environment variables
+      - name: Pull Vercel environment variables
         run: vercel pull --yes --environment=production --token = ${{ secrets.VERCEL_TOKEN }}
-      -name: Deploy to Vercel
+      - name: Deploy to Vercel
         run: vercel deploy --prod --token = ${{ secrets.VERCEL_TOKEN }} 
         
