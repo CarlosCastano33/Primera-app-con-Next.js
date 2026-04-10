@@ -1,7 +1,7 @@
 import React from 'react'
 import PrincipalButton from '@/components/atoms/Buttons/Principal'
 
-const index = () => {
+const herotext = () => {
   return (
     <div className='flex flex-col items-start max-w-2xl px-4 gap-8'>
         <div>
@@ -20,4 +20,4 @@ const index = () => {
   )
 }
 
-export default index
+export default herotext
