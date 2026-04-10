@@ -4,7 +4,7 @@ import Image from 'next/image'
 const layout = ({
     children
 }: Readonly<{
-    children: React.ReadNode;
+    children: React.ReactNode;
 }>) => {
   return (
   <div className='relative flex flex-col w-full h-screen items-center justify-center bg-black'>    
